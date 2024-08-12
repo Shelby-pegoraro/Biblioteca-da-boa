@@ -1,0 +1,100 @@
+body {
+    color: white;
+    background: black;
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
+
+.Titulo {
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 6px rgb(56, 192, 255);
+}
+
+.texto1 {
+    margin-right: 5%;
+    color: rgb(206, 221, 1);
+    font-size: 20px;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.videos {
+    display: flex;
+    gap: 5px;   /* espaçamento entre os videos */
+    font-size: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: auto;
+}
+
+#videos-itens{
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    
+}
+
+.videos img {
+    /* opacity: 0.8; está dando o erro*/
+    height: 200px; /* tamanho das imagens dos videos */
+    border: 5px solid rgb(255, 240, 107);
+    border-radius: 6%;
+}
+
+.videos img:hover {
+    opacity: 1.0;
+    border: 3px solid rgb(52, 243, 179);
+}
+
+.container h2 {
+    color: rgb(223, 83, 228);
+    font-size: 45px;
+}
+
+.container h3 {
+    color: rgb(138, 220, 226);
+    font-size: 45px;
+}
+
+button{
+    background-color: rgba(192, 93, 0, 0.979); 
+    border: none;
+    color: #000; 
+    font-size: 250%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.prev{
+    left: 0;
+}
+
+button.next{
+    right: 0;
+}
+
+button:hover{
+    background-color: rgba(192, 93, 0, 0.712);
+}
